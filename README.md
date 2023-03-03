@@ -9,3 +9,12 @@ and [frp](https://github.com/fatedier/frp) but they need you to have a domain na
 - Make sure you have `Golang` and `Ngrok` installed
 - Create `.env` file using `.env.example`
 - Run `go build main.go` to build the executable OR directly run using `go run main.go`
+
+To make this run every time after reboot
+- Edit `run.sh` and add your correct location 
+- Run `chmod +x run.sh` to make it executable
+- Set a crobtab for it
+```
+$ crontab -e
+@reboot  /home/user/startup.sh
+```
