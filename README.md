@@ -16,5 +16,5 @@ To make this run every time after reboot
 - Set a crobtab for it
 ```
 $ crontab -e
-@reboot  /home/user/startup.sh
+@reboot  /home/user/<path_to_exposer_director>/run.sh
 ```
